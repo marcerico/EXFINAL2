@@ -1,5 +1,19 @@
 $('#login_button').on('click', function(){
-  // cargar email y password
+  function login(container-form){
+    var username = form.usern.value;
+    var password = form.password.value;
+    var xmlhttp = new XHMLHTTPRequest();
+    xmlhttp.open('post','Login',true);
+    xmlhttp.onreadystatechange = function(){
+      if(xmlhttp.readyState == 2 && xmlhttp.status == 300){
+        alert('LOGGEDIN')
+      }
+    }
+  }
+
+window.addEventListener(window,'load',function(){
+  var login = document.getElementById('container-form')
+})
 
   json_to_send = {
     "email": email,
