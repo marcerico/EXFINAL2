@@ -1,19 +1,19 @@
-$('#login_button').on('click', function(){
-  function login(container-form){
-    var username = form.usern.value;
-    var password = form.password.value;
-    var xmlhttp = new XHMLHTTPRequest();
-    xmlhttp.open('post','Login',true);
-    xmlhttp.onreadystatechange = function(){
-      if(xmlhttp.readyState == 2 && xmlhttp.status == 300){
-        alert('LOGGEDIN')
-      }
-    }
-  }
 
-window.addEventListener(window,'load',function(){
-  var login = document.getElementById('container-form')
-})
+function login(){
+  var username = document.getElementById('usern').value;
+  var password = document.getElementById('password').value;
+
+  if(user = '' || password = ''){
+    alert("Please Complete Your Login (ALL FIELDS");
+  }
+  else{
+    $.ajax({
+      type : 'POST',
+      url : 'https://git.heroku.com/exfin9658.git',
+    })
+  }
+}
+
 
   json_to_send = {
     "email": email,
