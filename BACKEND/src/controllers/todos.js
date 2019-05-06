@@ -2,7 +2,7 @@ const Todo = require('../models/todo')
 
 const getTodos = function(req, res) {
   // solo podemos hacer GET de los todos del usuario que hizo login
-  Todo.find({ createdBy: req.user._id}).then(function(todos) {
+  Todo.find({ createdBy: req.description}).then(function(todos) {
     res.send(todos)
   }).catch(function(error){
     res.status(500).send(error)
