@@ -5,7 +5,7 @@ $('#signup_button').on('click', function(){
       event.preventDefault()
       var password = $("password").val();
       var email =  $("email").val();
-      var name = $("password").val();
+      var name = $("name").val();
       var age = $("age").val();
     })
   })
