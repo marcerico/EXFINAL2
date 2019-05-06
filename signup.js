@@ -6,7 +6,7 @@ $('#signup_button').on('click', function(){
       var password = $("password").val();
       var email =  $("email").val();
       var name = $("password").val();
-      var age = $("password").val();
+      var age = $("age").val();
     })
   })
   json_to_send = {
