@@ -1,6 +1,14 @@
 
 $('#signup_button').on('click', function(){
-  // cargar los valores de password, email, name, age
+    $document.ready(function(){
+    $("signup_option").signup_button(function(event){
+      event.preventDefault()
+      var password = $("password").val();
+      var email =  $("email").val();
+      var name = $("password").val();
+      var age = $("password").val();
+    })
+  })
   json_to_send = {
     "password" : password,
     "email": email,
